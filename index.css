@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    background-color: hsl(148, 38%, 91%);
+    color:hsl(186, 15%, 59%);
+    font-weight: 400;
+}
+h1{
+    color:hsl(187, 24%, 22%);
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.contactformbox{
+    background-color: white;
+    margin:25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    width:max-content;
+    padding:7px 16px;
+}
+label{
+    font-size: 16px;
+}
+input{
+    cursor: pointer;
+}
+#fname,#lname{
+    width:220px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#email{
+    width:470px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#Message{
+    width:470px;
+    height:70px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#submit{
+    width:470px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+    background-color: hsl(169, 82%, 27%);
+    font-weight: 800;
+    color: white ;
+}
+
+.radio{
+    width:220px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+    text-align: center;
+    padding:12px 0 1px 0;
+}
+.row{
+    display:flex;
+    gap:25px;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+}
+/* .contactformbox > div {
+    width:800px;
+} */
+.error{
+    display:none;
+    color:hsl(0, 66%, 54%);
+    font-size: 12px;
+}
+.display{
+    display:block;
+    color:hsl(0, 66%, 54%);
+    font-size: 12px;
+}
+.success{
+    display:none;
+}
+.sucess1{
+    display:flex;
+    background-color: black;
+    color:white;
+    flex-direction: column;
+    width:fit-content;
+    border-radius: 8px;
+    padding:7px 12px;
+    position: absolute;
+    top:25px;
+    left:500px;
+    gap:25px;
+}
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    #submit,#Message,#email,#lname,.radio,#fname{
+        width:80%;
+    }
+    #radio1,#radio2 label{
+        padding-left:0;
+        text-align: left;
+    }
+    .sucess1{
+        width:90%;
+        position: none;
+        left:10px;
+    }
+
+}

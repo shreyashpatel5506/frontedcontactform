@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="index.js">
+       
+          </script>
+    </head>
+    <body><div class="container">
+        <div class="contactformbox">
+            <h1 class="heading">Contact Us</h1>
+           
+            <div class="row">
+                <div>
+                    <label>First Name  *</label><br>
+                    <input type="text" class="input"  id="fname" name="firstname">
+                    <p class="error" id="fer"> This feild is  requried</p>
+                </div>
+                <div>
+                    <label>Last Name  *</label><br>
+                    <input type="text" class="input"  id="lname">
+                    <p class="error" id="ler"> This feild is  required</p>
+                </div>
+            </div>
+            <div>
+                <label>
+                    E-mail adress
+                </label><br>
+                <input type="email" class="input"  id="email">
+                <p class="error" id="eer">please enter a valid email address</p>
+            </div>
+            <div class="row1">
+                <label>Query type  *</label>
+                <div class="row">
+                <div class="radio">
+                    <label>General Enquiry</label>
+                    <input type="radio" name="Query" id="radio1" checked>
+                    
+                    </p>
+                </div>
+                <div class="radio">
+                    <label>Support Request</label>
+                    <input type="radio" name="Query" id="radio2">
+                    
+                </div>
+                <p class="error" id="rerror"> please select any Query.</p>
+            </div>
+            </div>
+            <div>
+                <label>Message</label><br>
+                <input type="text" aria-rowspan="10" class="input" id="Message" >
+                <p class="error" id="merr"> This feild is required</p>
+            </div>
+            <div>
+                <input type="checkbox"  id="checkbox" checked disabled>
+                <label> I consent to being contacted by the team  *</label>
+                <p class="error" id="checke">To submit this form,please contenst to being contacted</p>
+            </div>
+            <div>
+                <button  value="submit" id="submit" onclick="submit3()">Submit</button>
+            </div>
+
+        </div>
+</div>
+        <div class="success" id="success2">
+            <div style="font-weight:800">&#10003; Message sent!</div>
+            <div>Thanks for completing the form,We'll be touch soon!</div>
+        </div>
+    </body>
+</html>
